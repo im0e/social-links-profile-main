@@ -1,0 +1,106 @@
+@import './base.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    background-color : var(--c-neutral-black-off);
+
+    color: var(--c-neutral-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    padding: 3rem;
+
+    background-color: var(--c-neutral-grey-dark);
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-content: center;
+
+
+    gap: .8rem;
+
+
+    border-radius: 16px;
+
+    min-width: 300px;
+}
+
+.card  h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.card h3 {
+    color: var(--c-primary);
+    text-align: center;
+
+    margin: 0 0 1rem 0;
+}
+
+.card a {
+    padding: .75rem 2rem;
+
+    background-color: var(--c-neutral-grey);
+
+    flex: 1;
+    border-radius: 8px;
+
+    color: var(--c-neutral-white);
+    text-decoration: none;
+
+    font-weight: 600;
+
+    text-align: center;
+
+}
+
+.card a:is(:active, :hover, :focus) {
+    background-color: var(--c-primary);
+    color: var(--c-neutral-black-off);
+}
+
+.card .avatar {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.card p {
+    color: var(--c-neutral-white);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+
+    padding: 0.5rem;
+
+    font-family: monospace;
+}
