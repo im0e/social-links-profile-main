@@ -71,6 +71,8 @@ body {
 
     text-align: center;
 
+    transition: background-color 0.3s, color 0.3s;
+
 }
 
 .card a:is(:active, :hover, :focus) {
